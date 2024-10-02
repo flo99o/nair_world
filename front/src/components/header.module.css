@@ -1,0 +1,9 @@
+.imgHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgHeader img{
+    width: 617px;
+    object-fit: cover;
+}
