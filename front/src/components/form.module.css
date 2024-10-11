@@ -1,0 +1,21 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+
+
+}
+
+input {
+  padding: 10px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Un fond blanc semi-transparent pour rendre l'input visible */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px;
+}

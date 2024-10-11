@@ -1,9 +1,10 @@
 .imgHeader{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .imgHeader img{
-    width: 617px;
+    width: 100%;
     object-fit: cover;
 }

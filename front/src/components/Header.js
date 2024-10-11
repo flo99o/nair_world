@@ -3,13 +3,15 @@ import afro from "../assets/afro.jpg";
 import braids from "../assets/braids.jpg";
 import group from "../assets/group.jpg";
 import styles from "./header.module.css";
+import Form from "./Form";
 
 const Header = () => {
   return (
     <div className={styles.imgHeader}>
       <img src={braids} alt="" />
       <img src={group} alt="" />
-      <img src={afro} alt="" />
+      <img src={afro} alt="" />  
+      <Form/>   
     </div>
   );
 };
