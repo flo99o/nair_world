@@ -1,0 +1,129 @@
+
+.minip {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    box-shadow: 0px 0px 5px none;
+  }
+
+  
+  .mg {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 250px 50px;
+    grid-template-rows: 100px 150px;
+    grid-template-areas: 
+      'clr group'
+      'clr .....';
+    transition: grid-template-columns .6s linear, grid-template-rows .6s linear;
+  }
+  
+  .minip:hover .mg {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 50px 300px;
+    transition: grid-template-columns .6s linear, grid-template-rows .6s linear;
+  }
+  
+  .clr {
+    grid-area: clr;
+    background: var(--brown);
+  }
+  
+  .group {
+    grid-area: group;
+    font: 10px/10px var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .group span {
+ 
+    transform: rotate(180deg);
+    transition: transform .6s linear;
+  }
+  
+  .minip:hover .group span {
+    transform: rotate(270deg);
+    transition: transform .6s linear;
+  }
+  
+  .av {
+    width: 200px;
+    height: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: var(--lightbrown);
+    background-position: top center;
+    background-size: cover;
+    transition: width .6s linear, height .6s linear;
+  }
+  
+  .minip:hover .av {
+    width: 250px;
+    height: 400px;
+    transition: width .6s linear, height .6s linear;
+  }
+  
+  .info {
+    width: 160px;
+    max-height: 100px;
+    padding: 25px;
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    background: var(--pinkshade);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    transition: bottom .6s linear;
+  }
+  
+  .minip:hover .info {
+    bottom: 50px;
+    transition: bottom .6s linear;
+  }
+  
+  .name {
+    font: 200 25px/30px var(--display);
+    text-indent: -25px;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px 25px;
+  }
+  
+  .deets {
+    font: 10px/15px var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .plot {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    bottom: 85px;
+    left: 85px;
+    background: var(--darkbrown);
+    font: 10px/10px var(--mono);
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bottom .6s linear;
+  }
+  
+  .minip:hover .plot {
+    bottom: 35px;
+    transition: bottom .6s linear;
+  }
+  
