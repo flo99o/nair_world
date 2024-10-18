@@ -14,6 +14,7 @@ const Card = ({ name, location, category, files }) => {
       <div className={styles.info}>
         <div className={styles.name}>name hair</div>
         <div className={styles.deets}>location</div>
+        <div className={styles.deets}>prix</div>
         <div className={styles.deets}>avis</div>
       </div>
       <a className={styles.plot} href="#">More details</a>
