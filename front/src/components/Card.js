@@ -1,25 +1,30 @@
 import React from "react";
 import styles from "./card.module.css";
-import curly from "../assets/curly.jpg"
-const Card = ({ name, location, category, files }) => {
+import curly from "../assets/curly.jpg";
+import Heart from "../assets/svg/heart.svg"
+
+ 
+const Card = ({ name, location, category, price, reviews }) => {
   return (
-    <div className={styles.minip}>
-      <div className={styles.mg}>
-        <div className={styles.clr}></div>
-        <div className={styles.group}>
-          <span>Tokyo</span>
+    <div className={styles.card}>
+      <div className={styles.wrapper}>
+         <div>
+         
+         </div>
+        <img className={styles.image} src={curly} alt="Haircut" />
+        <div className={styles.info}>
+          <h2 className={styles.name}>Name du lieu {name}</h2>
+          <p className={styles.text}>Location: {location}</p>
+          <p className={styles.text}>Prix: {price}€</p>
+          <p className={styles.text}>Avis: {reviews}</p>
+          <a href="#" className={styles.plot}>More details</a>
         </div>
       </div>
-      <img className={styles.av} src={curly} alt="" />
-      <div className={styles.info}>
-        <div className={styles.name}>name hair</div>
-        <div className={styles.deets}>location</div>
-        <div className={styles.deets}>prix</div>
-        <div className={styles.deets}>avis</div>
-      </div>
-      <a className={styles.plot} href="#">More details</a>
     </div>
   );
 };
 
 export default Card;
+
+ //*<h1 className={styles.title}>hair{category}</h1>
+
